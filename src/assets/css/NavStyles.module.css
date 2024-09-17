@@ -1,0 +1,64 @@
+.navBarContainer{
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 3; 
+    background-color: #1c2529;
+    .contactContainer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0px;
+        background-color: #1c2529;
+        padding: 10px;
+        .contact_1, .contact_2{
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            p{
+                color: #fdd05a;
+            }
+            i{
+                font-size: 18px;
+                color: #fdd05a;
+                padding-right: 10px;
+            }
+        }
+        .contact_1 p {
+            margin: auto 0;
+        }
+
+    }
+}
+.navBar {
+    background-color: #fdd05a;
+    img {
+        height: 95px;
+        width: 95px;
+        margin-left: 35px;
+    }
+    .linkContainer{
+        margin-right: 35px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navBar {
+
+        img {
+            height: 85px;
+            width: 85px;
+            margin-left: 0px;
+        }
+    }
+    .navBarContainer{
+        .contactContainer{
+            display: none;
+        }
+
+    }
+}
+
+

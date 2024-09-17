@@ -1,0 +1,20 @@
+.footerContainer {
+    width: 100%;     
+    background-color: #fdd05a;
+    footer {
+        text-align: center; 
+        padding: 15px 0;
+        margin-top: auto;
+    }
+
+    footer p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+
+
+
+

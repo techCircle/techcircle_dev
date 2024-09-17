@@ -1,0 +1,218 @@
+.classesContainer{
+    
+    .infoContainer{
+        div{
+            padding: 0;
+        }
+        img{
+            height: 70vh;
+            width: 100%;
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            padding-right: 15px;
+            h1{
+                display: flex;
+                justify-content: start;
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+            }
+            ul li {
+                text-align: left;
+                list-style-type: none;
+                line-height: 1.8;
+            }
+            ul i{
+                padding-right: 12px;
+            }
+        }
+
+    }
+}
+
+.curriculumContainer {
+    padding: 55px 0;
+    h1 {
+      text-align: center;
+      margin: 35px 0;
+    }
+
+    .curriculum {
+        color: #fdd05a;
+        background-color: #1c2529;
+        display: flex;
+        justify-content: center;
+        padding: 35px;
+        margin: 0;
+        .durationContainer {
+
+            --bs-nav-link-color: white;
+            --bs-nav-link-hover-color: #fdd05a;
+            --bs-nav-pills-link-active-color: #1c2529;
+            --bs-nav-pills-link-active-bg: #fdd05a;
+        }
+
+    }
+
+    .programInfoContainer {
+        padding-right: 0px;
+        ul{
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li::before{
+            content: "✔";
+            color: #fdd05a;
+            font-weight: bold;
+            font-size: 18px;
+            display: inline-block;
+            width: 1em;
+            margin-right: 10px;
+        }
+
+    }
+  
+    .mobileCurriculumContainer {
+      display: none;
+    }
+}
+
+.unitsContainer{
+    padding: 55px 0;
+    h1 {
+        text-align: center;
+        margin: 35px 0;
+    }
+    .courseContainer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        .course{
+            height: 12rem;
+            align-items: center;
+            img{
+                width: 42px;
+                height: 57px;
+                margin-top: 15px;
+            }
+            a{
+                font-weight: bold;
+            }
+        }
+    }
+
+    .courseMobileContainer{
+        display: none;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .classesContainer{
+    
+        .infoContainer{
+            img{
+                display: none;
+            }
+    
+            .info{
+                align-items: flex-start;
+                padding: 25px;
+
+            }
+    
+        }
+
+    
+    }
+
+    .curriculumContainer{
+        .curriculum{
+            .programInfoContainer, .durationContainer{
+                display: none;
+            }
+            .mobileCurriculumContainer{
+                display: flex;
+                .carouselIndicators {
+                    margin-bottom: 0rem;
+                }
+                .programInfoMobileContainer{
+                    h5{
+                        font-size: 15px;
+                    }
+                    ul{
+                        list-style: none;
+                        padding-left: 0;
+                    }
+                    li{
+                        font-size: 12px;
+                    }
+            
+                    ul li::before{
+                        content: "✔";
+                        color: #fdd05a;
+                        font-weight: bold;
+                        font-size: 12px;
+                        display: inline-block;
+                        width: 1em;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .unitsContainer{
+        .courseContainer{
+            display: none;
+        }
+        .courseMobileContainer{
+            display: block;
+            div{
+                margin: 0;
+            }
+            a{
+                font-weight: bold;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .classesContainer{
+        .infoContainer{
+            .info{
+                padding-left: 25px;
+            }
+            img{
+                height: 35vh;
+            }
+        }
+    }
+
+    .unitsContainer{
+        .courseContainer{
+            display: none;
+        }
+        .courseMobileContainer{
+            display: block;
+            div{
+                margin: 0;
+            }
+            a{
+                font-weight: bold;
+                font-size: 14px;
+            }
+        }
+    }
+}
